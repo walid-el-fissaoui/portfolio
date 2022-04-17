@@ -1,0 +1,11 @@
+@mixin flex-start-center($justify: start) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+@mixin flex-center-center() {
+  @include flex-start-center(center);
+}
+@mixin flex-between-center() {
+  @include flex-start-center(space-between);
+}

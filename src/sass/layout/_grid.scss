@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+$container-max-widths: (
+  'sm': 540px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1140px,
+  'xxl': 1320px
+);
+
+@each $breakpoint, $width in $container-max-widths {
+  @media (min-width: map-get($breakpoints,$breakpoint)) {
+    .container {
+        max-width: $width;
+    }
+  }
+}

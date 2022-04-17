@@ -1,0 +1,25 @@
+{
+  "name": "walid_el_fissaoui_portfolio",
+  "version": "1.0.0",
+  "description": "this is my professional portfolio",
+  "main": "index.html",
+  "scripts": {
+    "gulp" : "gulp"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "html",
+    "css",
+    "gulp",
+    "sass",
+    "js"
+  ],
+  "author": "walid el fissaoui",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.0"
+  }
+}

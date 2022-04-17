@@ -1,0 +1,106 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--cp-body);
+}
+.navbar.nav {
+  height: $header-hight;
+  @include flex-between-center;
+  .brand {
+    color: var(--cp-heading);
+    font-weight: var(--type-fw-medium);
+  }
+  .menu {
+    a {
+      @include flex-between-center;
+      position: relative;
+      &.active {
+        color: var(--cp-primary);
+        &::after {
+          content: "";
+          background-color: var(--cp-primary);
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+        }
+      }
+    }
+  }
+  ul {
+    li {
+      padding: 1rem;
+      a {
+        i {
+          margin-right: 4px;
+        }
+        font-size: var(--type-fs-s-2);
+        color: var(--cp-heading);
+        font-weight: var(--type-fw-medium);
+      }
+    }
+  }
+  ul.btns {
+    li {
+      a {
+        &.toggle-mobile-menu {
+          display: none;
+        }
+        font-size: var(--type-fs-n-4);
+      }
+    }
+  }
+  .menu {
+    @include flex-between-center;
+    margin-left: auto;
+  }
+  .btns {
+    @include flex-center-center;
+  }
+  @include media-mobile() {
+    .menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: $box-shadow;
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: 0.3s;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+      li {
+        padding: 0;
+        a {
+          i {
+            margin-right: 0;
+          }
+          flex-direction: column;
+          &.active::after {
+            left: initial;
+          }
+        }
+      }
+    }
+    .btns {
+      a.toggle-mobile-menu {
+        display: block !important;
+      }
+      justify-content: end !important;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    bottom: 0;
+    top: initial;
+  }
+}

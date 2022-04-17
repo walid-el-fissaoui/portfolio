@@ -1,0 +1,38 @@
+:root {
+  // Color Palette
+  --cp-primary: #42a5f5;
+  --cp-secondary: #2f9bf4;
+  --cp-heading: #22272b;
+  --cp-text: #657481;
+  --cp-text-light: #bac0c4;
+  --cp-text-lighten: #e9ebec;
+  --cp-body: #fafdff;
+  --cp-container: #fff;
+  // Typography
+  --type-font-main: 'Poppins', sans-serif;
+  --type-fs-s-1: .75rem;
+  --type-fs-s-2: .813rem;
+  --type-fs-n-3: .938rem;
+  --type-fs-n-4: 1.125rem;
+  --type-fs-n-5: 1.25rem;
+  --type-fs-n-6: 1.5rem;
+  --type-fs-l-7: 2rem;
+  --type-fw-medium: 500;
+  --type-fw-bold: 600;
+  // Responsive typography
+  @media screen and (min-width: 968px){
+    --type-fs-s-1: .813rem;
+    --type-fs-s-2: .875rem;
+    --type-fs-n-3: 1rem;
+    --type-fs-n-4: 1.25rem;
+    --type-fs-n-5: 1.5rem;
+    --type-fs-n-6: 2.25rem;
+    --type-fs-l-7: 3rem;
+  }
+  // Spacing
+  --mr-1: 0.75rem;
+  --pd-1: 0.75rem;
+}
+
+$header-hight: 3rem;
+$box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
