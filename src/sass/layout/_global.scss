@@ -5,10 +5,22 @@
 }
 body {
   font-family: var(--type-font-main);
+  font-family: var(--type-font-main);
+  font-size: var(--type-fs-n-3);
+  background-color: var(--cp-body);
+  color: var(--cp-text);
 }
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+h1,h2,h3,h4 {
+  color: var(--cp-heading);
+  font-weight: var(--type-fw-bold);
+}
+img {
+  max-width: 100%;
+  height: auto;
 }

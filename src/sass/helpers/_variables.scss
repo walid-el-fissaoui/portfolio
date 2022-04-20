@@ -36,3 +36,19 @@
 
 $header-hight: 3rem;
 $box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+
+body.dark-theme {
+  --cp-heading: #f1f2f4;
+  --cp-text: #b8c0c7;
+  --cp-body: #0c151d;
+  --cp-container: #171f26;
+
+  --first-color-second: hsl(var(--hue-color),30%,8%);
+  --title-color: hsl(var(--hue-color),8%,95%);
+  --text-color: hsl(var(--hue-color),8%,75%);
+  --input-color: hsl(var(--hue-color),29%,16%);
+  --body-color: hsl(var(--hue-color),28%,12%);
+  --container-color: hsl(var(--hue-color),29%,16%);
+  --scroll-bar-color: hsl(var(--hue-color),12%,48%);
+  --scroll-thumb-color: hsl(var(--hue-color),12%,30%);
+}

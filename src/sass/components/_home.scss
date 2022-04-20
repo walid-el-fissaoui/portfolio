@@ -1,0 +1,18 @@
+.home-content {
+  height: calc(100vh - $header-hight);
+  margin-top: $header-hight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .home-title {
+    font-size: var(--type-fs-l-7);
+  }
+  .home-subtitle {
+    font-size: var(--type-fs-n-4);
+    color: var(--cp-text);
+    font-weight: var(--type-fw-medium);
+    margin-bottom: .75rem;
+  }
+  .home-description {}
+}
