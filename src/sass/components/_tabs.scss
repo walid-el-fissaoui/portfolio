@@ -1,6 +1,6 @@
 .tabs {
   &__navs {
-    background-color: var(--cp-text-lighten);
+    background-color: var(--cp-input);
     padding: .375rem;
     border-radius: .75rem;
     display: flex;
@@ -13,6 +13,7 @@
     &:hover {
       background-color: var(--cp-body);
     }
+    font-family: var(--type-font-main);
     width: 100%;
     border: none;
     outline: none;
