@@ -1,0 +1,34 @@
+.timeline {
+  &__station {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+  }
+  &__title {
+    font-size: var(--type-fs-n-3);
+    font-weight: var(--type-fw-medium);
+  }
+  &__subtitle {
+    display: inline-block;
+    font-size: var(--type-fs-s-2);
+    margin-bottom: 1rem;
+  }
+  &__calendar {
+    font-size: var(--type-fs-s-1);
+    color: var(--cp-text-light);
+  }
+  &__point {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--cp-primary);
+    border-radius: 50%;
+  }
+  &__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--cp-primary);
+    transform: translate(6px,-7px);
+  }
+}

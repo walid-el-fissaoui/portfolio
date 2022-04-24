@@ -1,0 +1,36 @@
+.tabs {
+  &__navs {
+    background-color: var(--cp-text-lighten);
+    padding: .375rem;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: .5rem;
+    width: 332px;
+    margin: 3rem auto;
+  }
+  &__button {
+    &:hover {
+      background-color: var(--cp-body);
+    }
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: var(--cp-text);
+    font-size: var(--type-fs-s-2);
+    font-weight: 500;
+    border-radius: .75rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+  }
+  &__box {
+    display: none;
+    width: 400px;
+    margin: 0 auto;
+    &.active {
+      display: block;
+    }
+  }
+}

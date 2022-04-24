@@ -1,4 +1,5 @@
 @import 'helpers/variables';
+@import 'layout/utilities';
 @import 'layout/global';
 @import 'layout/breakpoints';
 @import 'layout/grid';
@@ -9,3 +10,5 @@
 @import 'components/home';
 @import 'components/section';
 @import 'components/skills-card';
+@import 'components/tabs';
+@import 'components/timeline';
