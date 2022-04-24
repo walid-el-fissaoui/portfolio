@@ -1,0 +1,13 @@
+section {
+  padding: 96px 0 32px;
+  .section-title {
+    font-size: var(--type-fs-n-6);
+    text-align: center;
+  }
+  .section-subtitle {
+    display: block;
+    font-size: var(--type-fs-s-2);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
