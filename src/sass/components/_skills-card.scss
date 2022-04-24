@@ -1,0 +1,35 @@
+.skills-card {
+  .skills-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+    i {
+      font-size: 2rem;
+      color: var(--cp-primary);
+      margin-right: 0.75rem;
+    }
+    .skills-title {
+      font-size: 1.25rem;
+    }
+    .skills-subtitle {
+      font-size: 0.875rem;
+      color: var(--cp-text);
+    }
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    .skill-info {
+      display: flex;
+      align-items: center;
+      min-width: 120px;
+      .skill-name {
+        margin-left: 5px;
+        font-weight: var(--type-fw-medium);
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
