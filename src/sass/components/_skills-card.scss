@@ -1,3 +1,6 @@
+.skills-container {
+  grid-template-columns: repeat(2,1fr);
+}
 .skills-card {
   .skills-header {
     display: flex;
@@ -16,20 +19,34 @@
       font-size: 0.875rem;
       color: var(--cp-text);
     }
+    .card-arrow {
+      transition: .3s;
+    }
   }
   .skills-list {
+    height: 0;
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     .skill-info {
       display: flex;
       align-items: center;
-      min-width: 120px;
+      min-width: 50%;
       .skill-name {
         margin-left: 5px;
         font-weight: var(--type-fw-medium);
         font-size: 1rem;
         text-transform: uppercase;
       }
+    }
+  }
+  &.open {
+    .skills-list {
+      height: max-content;
+    }
+    .card-arrow {
+      transform: rotate(-180deg);
     }
   }
 }

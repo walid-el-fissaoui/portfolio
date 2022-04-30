@@ -48,3 +48,19 @@ const tabs = document.querySelectorAll(".tabs [data-target]"),
     })
   })
 // END : TIMELINE TABS
+// START : SKILLS ACCORDION
+const skills = document.querySelectorAll(".skills .skills-card"),
+  skillsHeaders = document.querySelectorAll(".skills .skills-card .skills-header");
+  function toggleSkills() {
+    let itemClasses = this.parentNode.className;
+    skills.forEach(item => {
+      item.classList.remove("open");
+    })
+    if(!itemClasses.includes("open")) {
+      this.parentNode.classList.add("open")
+    }
+  }
+  skillsHeaders.forEach(item => {
+    item.addEventListener("click",toggleSkills);
+  })
+// END : SKILLS ACCORDION

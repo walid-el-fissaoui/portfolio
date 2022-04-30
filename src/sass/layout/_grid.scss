@@ -68,3 +68,8 @@ $grid-gaps: (
 section .container {
   max-width: 768px;
 }
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}

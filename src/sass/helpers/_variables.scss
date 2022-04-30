@@ -10,6 +10,7 @@
   --cp-header: #fafdff;
   --cp-container: #fff;
   --cp-input: #e9ebec;
+  --cp-border: #d8e2ef;
   // Typography
   --type-font-main: 'Poppins', sans-serif;
   --type-fs-s-1: .75rem;
@@ -46,6 +47,7 @@ body.dark-theme {
   --cp-header: #11202cdb;
   --cp-container: #171f26;
   --cp-input: #1d3244;
+  --cp-border: #344050;
 
   --first-color-second: hsl(var(--hue-color),30%,8%);
   --title-color: hsl(var(--hue-color),8%,95%);
