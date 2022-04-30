@@ -1,0 +1,52 @@
+.sonar-wave {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item > *,&--animate {
+    width: 40px;
+    height: 40px;
+  }
+  &__item > * {
+    position: absolute;
+    z-index: 2;
+    animation: picture 1s cubic-bezier(0.12,0.7,0.74,0.71) infinite alternate-reverse;
+  }
+  &--animate {
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--cp-primary);
+    animation: scalling 2s  cubic-bezier(0.12,0.7,0.74,0.71) infinite;
+  }
+  &__circle--one {
+    animation-delay: 0s;
+  }
+  &__circle--two {
+    animation-delay: 1s;
+  }
+}
+@keyframes scalling {
+  0%{
+      transform: scale(4);
+      background-color: rgba(87, 201, 224, 1)
+  }
+  100% {
+      transform: scale(8);
+      background-color: rgba(87, 201, 224, 0)
+  }
+}
+@keyframes picture {
+  0% {
+      transform: scale(4);
+  }
+  100% {
+      transform: scale(4.5);
+  }
+}

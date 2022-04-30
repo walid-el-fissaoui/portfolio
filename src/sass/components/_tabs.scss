@@ -10,7 +10,7 @@
     margin: 3rem auto;
   }
   &__button {
-    &:hover {
+    &:hover,&.active {
       background-color: var(--cp-body);
     }
     font-family: var(--type-font-main);

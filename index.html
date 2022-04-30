@@ -56,12 +56,12 @@
         </ul>
         <ul class="btns">
           <li>
-            <a href="#" class="toggle-theme-mode">
+            <a href="#" id="toggle-theme-mode">
               <i class="ri-moon-line"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="toggle-mobile-menu">
+            <a href="#" class="toggle-mobile-menu" id="toggle-mobile-menu">
               <i class="ri-more-fill"></i>
             </a>
           </li>
@@ -72,10 +72,20 @@
   <!-- Start Home Section -->
   <section class="home" id="home">
     <div class="container">
-      <div class="home-content">
-        <h1 class="home-title">Hi, I'am Walid el fissaoui</h1>
-        <h3 class="home-subtitle">Vue Js / Laravel full stack developer</h3>
-        <p class="home-description">A self taught vuejs and laravel full stack developer, and IT technologies geeker.</p>
+      <div class="row justify-center">
+        <div class="sonar-wave">
+          <div class="sonar-wave__item">
+            <img src="src/assets/images/laptop.png" alt="">
+          </div>
+          <div class="sonar-wave--animate sonar-wave__circle--one"></div>
+          <div class="sonar-wave--animate sonar-wave__circle--two"></div>
+        </div>
+        <div class="home-content">
+          <h1 class="home-title">Hi, I'am Walid el fissaoui</h1>
+          <h3 class="home-subtitle">Vue Js / Laravel full stack developer</h3>
+          <p class="home-description">A self taught vuejs and laravel full stack developer, and IT technologies geeker.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -88,7 +98,9 @@
       <div class="row gap-2">
         <div class="col-xs-12 col-md-8">
           <div class="about-description">
-            <p>I'am walid el fissaoui, i'am a self taught vuejs and laravel full stack developer. I'm really interested in technology & solving technical problems, Although I am still at the beginning of my journey to learn IT.</p>
+            <p>I'am walid el fissaoui, i'am a self taught vuejs and laravel full stack developer. I'm really interested
+              in technology & solving technical problems, Although I am still at the beginning of my journey to learn
+              IT.</p>
           </div>
         </div>
         <div class="col-xs-12 col-md-4">
@@ -226,11 +238,11 @@
     <div class="container">
       <div class="tabs">
         <div class="tabs__navs">
-          <button class="tabs__button">Education</button>
-          <button class="tabs__button">Experience</button>
+          <button class="tabs__button active" data-target="education">Education</button>
+          <button class="tabs__button" data-target="work">Experience</button>
         </div>
         <div class="tabs__content">
-          <div class="tabs__box">
+          <div class="tabs__box active" data-content="education">
             <div class="timeline">
               <div class="timeline__station">
                 <div>
@@ -276,7 +288,7 @@
               </div>
             </div>
           </div>
-          <div class="tabs__box active">
+          <div class="tabs__box" data-content="work">
             <div class="timeline">
               <div class="timeline__station">
                 <div>
@@ -337,6 +349,7 @@
     </div>
   </section>
   <!-- End Contact Section -->
+  <script src="src/assets/js/main.js"></script>
 </body>
 
 </html>

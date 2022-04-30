@@ -1,13 +1,16 @@
 .header {
+  &.scroll {
+    box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+  }
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--cp-body);
+  background-color: var(--cp-header);
 }
 .navbar.nav {
-  height: $header-hight;
+  height: calc($header-hight + 1.5rem);
   @include flex-between-center;
   .brand {
     color: var(--cp-heading);
@@ -17,19 +20,26 @@
     a {
       @include flex-between-center;
       position: relative;
-      &.active {
+      transition: .3s;
+      &.active,&:hover {
         color: var(--cp-primary);
         &::after {
           content: "";
-          background-color: var(--cp-primary);
-          position: absolute;
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          position: absolute;
-          bottom: -10px;
-          left: 50%;
+          opacity: 1;
         }
+      }
+      &::after {
+        content: "";
+        background-color: var(--cp-primary);
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transition: .3s;
+        opacity: 0;
       }
     }
   }
