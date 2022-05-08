@@ -46,3 +46,55 @@ button,input {
   background-color: var(--text-color-light);
 }
 /* ======== End Scroll bar ========= */
+
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid var(--cp-primary);
+  border-color: var(--cp-primary) transparent var(--cp-heading) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.status {
+  p {
+    font-size: var(--type-fs-s-2);
+    font-weight: var(--type-fw-bold);
+  }
+  .success {
+    color: #7be495;
+  }
+  .error {
+    color: #FF4242;
+  }
+}

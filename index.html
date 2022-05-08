@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="I'am walid el fissaoui, a software engineer from morocco, i am working as full stack web developer and i'am passionate about it.">
+  <meta name="keywords" content="html,css,js,php,laravel,web developer,website,create,build,buy,ask,it,software">
+  <meta name="author" content="walid el fissaoui">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>walid el fissaoui</title>
+  <link rel="icon" type="image/x-icon" href="dist/assets/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -310,19 +314,21 @@
     <h2 class="section-title">Contact Me</h2>
     <span class="section-subtitle">Send me an email</span>
     <div class="container">
-      <form action="" class="form" id="form">
+      <form action="" class="form" id="contact-form">
         <div class="row gap-2">
           <div class="col-xs-12 col-md-6">
-            <input type="text" name="name" placeholder="Your name" class="form__input">
+            <input type="text" name="name" id="name" placeholder="Your name" class="form__input" required>
           </div>
           <div class="col-xs-12 col-md-6">
-            <input type="email" name="email" placeholder="Your email" class="form__input">
+            <input type="email" name="email" id="email" placeholder="Your email" class="form__input" required>
           </div>
           <div class="col-xs-12">
-            <textarea name="message" placeholder="Your message" class="form__input"></textarea>
+            <textarea name="message" id="message" placeholder="Your message" class="form__input" required></textarea>
           </div>
-          <div class="col-xs-12">
+          <div class="col-xs-12 d-flex justify-between align-items-center">
             <input type="submit" value="Send" class="form__submit button button--primary">
+            <div class="status d-none" id="status">
+            </div>
           </div>
         </div>
       </form>
@@ -337,6 +343,7 @@
   </footer>
   <!-- End Footer Section -->
   <script src="dist/assets/js/main.js"></script>
+  <script src="mail/contact.js"></script>
 </body>
 
 </html>
