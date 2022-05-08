@@ -58,10 +58,10 @@
   }
   ul.btns {
     li {
+      &.toggle-mobile-menu {
+        display: none;
+      }
       a {
-        &.toggle-mobile-menu {
-          display: none;
-        }
         font-size: var(--type-fs-n-4);
       }
     }
@@ -76,10 +76,10 @@
   @include media-mobile() {
     .menu {
       position: fixed;
-      bottom: 0;
+      bottom: -100%;
       left: 0;
       width: 100%;
-      background-color: var(--body-color);
+      background-color: var(--cp-body);
       padding: 2rem 1.5rem 4rem;
       box-shadow: $box-shadow;
       border-radius: 1.5rem 1.5rem 0 0;
@@ -99,10 +99,15 @@
           }
         }
       }
+      &.open {
+        bottom: 0;
+      }
     }
     .btns {
-      a.toggle-mobile-menu {
+      .toggle-mobile-menu {
         display: block !important;
+        position: relative;
+        z-index: 2;
       }
       justify-content: end !important;
     }

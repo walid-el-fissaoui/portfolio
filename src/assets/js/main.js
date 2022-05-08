@@ -21,6 +21,17 @@ function toggleTheme() {
 }
 toggleTheme()
 // END : TOGGLE DARK / LIGHT MODE
+// START : OPEN CLOSE MOBILE NAVBAR
+function openCloseMobileNav() {
+  const menu = document.querySelector("#header .menu"),
+    menuToggle = document.querySelector("#header #toggle-mobile-menu");
+    menuToggle.addEventListener("click",(e) => {
+      e.preventDefault()
+      menu.classList.toggle("open");
+    })
+}
+openCloseMobileNav()
+// END : OPEN CLOSE MOBILE NAVBAR
 // START : TOGGLE HEADER SCROLL SHADOW
 function scrollHeader() {
   const nav = document.getElementById('header');
